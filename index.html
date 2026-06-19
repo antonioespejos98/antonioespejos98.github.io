@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antonio Espejo · Ingeniero Informático & Kickboxing</title>
+  <meta name="description" content="Portfolio de Antonio Espejo: ingeniero informático especializado en IA generativa y técnico deportivo de kickboxing. Creador de aprendekickboxing.com." />
+  <meta property="og:title" content="Antonio Espejo · Dev & Kickboxing" />
+  <meta property="og:description" content="Ingeniero Informático (IA generativa) y técnico deportivo de kickboxing." />
+  <meta property="og:image" content="images/hero-split.png" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">AE</a>
+    <nav class="nav__links">
+      <a href="#about" data-es="Sobre mí" data-en="About">Sobre mí</a>
+      <a href="#experience" data-es="Trayectoria" data-en="Career">Trayectoria</a>
+      <a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a>
+      <a href="#kickboxing" data-es="Kickboxing" data-en="Kickboxing">Kickboxing</a>
+      <a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+      <span class="lang-toggle__opt is-active" data-lang="es">ES</span>
+      <span class="lang-toggle__sep">/</span>
+      <span class="lang-toggle__opt" data-lang="en">EN</span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__inner">
+      <div class="hero__photo">
+        <img src="images/hero-split.png" alt="Antonio Espejo - dev y kickboxing" onerror="this.classList.add('img-missing')" />
+      </div>
+      <div class="hero__text">
+        <p class="hero__eyebrow" data-es="Hola, soy Antonio Espejo" data-en="Hi, I'm Antonio Espejo">Hola, soy Antonio Espejo</p>
+        <h1 class="hero__title">
+          <span class="word word--dev" data-es="Ingeniero" data-en="Software">Ingeniero</span>
+          <span class="word word--dev" data-es="Informático" data-en="Engineer">Informático</span>
+          <span class="hero__amp">&amp;</span>
+          <span class="word word--fight" data-es="Kickboxer" data-en="Kickboxer">Kickboxer</span>
+        </h1>
+        <p class="hero__sub" data-es="Construyo software e inteligencia artificial de día. Entreno y enseño kickboxing el resto del tiempo. Dos disciplinas, la misma obsesión por mejorar." data-en="I build software and AI by day. I train and teach kickboxing the rest of the time. Two disciplines, one obsession with getting better.">Construyo software e inteligencia artificial de día. Entreno y enseño kickboxing el resto del tiempo. Dos disciplinas, la misma obsesión por mejorar.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary" data-es="Ver proyectos" data-en="View projects">Ver proyectos</a>
+          <a href="#kickboxing" class="btn btn--ghost" data-es="Faceta deportiva" data-en="The athlete">Faceta deportiva</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span data-es="Desplázate" data-en="Scroll">Desplázate</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__head reveal">
+      <span class="section__num">01</span>
+      <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+    </div>
+    <div class="about">
+      <div class="about__text reveal">
+        <p data-es="Ingeniero Informático especializado en ingeniería del software y Técnico Superior en Desarrollo de Aplicaciones Web. Tengo experiencia en desarrollo, gestión y mantenimiento web, prototipado de electrónica e integración de sistemas mediante APIs." data-en="Computer Engineer specialized in software engineering and Higher Technician in Web Application Development. I have experience in web development, management and maintenance, electronics prototyping and systems integration through APIs.">Ingeniero Informático especializado en ingeniería del software y Técnico Superior en Desarrollo de Aplicaciones Web. Tengo experiencia en desarrollo, gestión y mantenimiento web, prototipado de electrónica e integración de sistemas mediante APIs.</p>
+        <p data-es="Actualmente estoy enfocado en IA generativa, desarrollando asistentes virtuales basados en LLMs: desde la definición del caso de uso hasta el demo funcional, con arquitectura conversacional, RAG, tool calling y evaluación de calidad." data-en="I'm currently focused on generative AI, building LLM-based virtual assistants — from use-case definition to a working demo, with conversational architecture, RAG, tool calling and quality evaluation.">Actualmente estoy enfocado en IA generativa, desarrollando asistentes virtuales basados en LLMs: desde la definición del caso de uso hasta el demo funcional, con arquitectura conversacional, RAG, tool calling y evaluación de calidad.</p>
+        <p data-es="Fuera del código soy técnico deportivo de kickboxing. Creé y mantengo aprendekickboxing.com y comparto entrenamiento en mi canal de YouTube. Persona resolutiva, responsable y de equipo." data-en="Away from code I'm a certified kickboxing instructor. I created and maintain aprendekickboxing.com and share training on my YouTube channel. Resourceful, responsible and a team player.">Fuera del código soy técnico deportivo de kickboxing. Creé y mantengo aprendekickboxing.com y comparto entrenamiento en mi canal de YouTube. Persona resolutiva, responsable y de equipo.</p>
+      </div>
+      <aside class="about__card reveal">
+        <img src="images/profile.png" alt="Antonio Espejo" class="about__photo" onerror="this.classList.add('img-missing')" />
+        <ul class="about__facts">
+          <li><span data-es="Ubicación" data-en="Location">Ubicación</span><strong>Córdoba, España</strong></li>
+          <li><span data-es="Idiomas" data-en="Languages">Idiomas</span><strong data-es="Español (nativo) · Inglés B2" data-en="Spanish (native) · English B2">Español (nativo) · Inglés B2</strong></li>
+          <li><span data-es="Enfoque" data-en="Focus">Enfoque</span><strong data-es="IA generativa · LLMs" data-en="Generative AI · LLMs">IA generativa · LLMs</strong></li>
+          <li><span data-es="Deporte" data-en="Sport">Deporte</span><strong data-es="Técnico deportivo de kickboxing" data-en="Certified kickboxing coach">Técnico deportivo de kickboxing</strong></li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="skills reveal">
+      <h3 data-es="Competencias técnicas" data-en="Technical skills">Competencias técnicas</h3>
+      <div class="skills__grid">
+        <div class="skill-group">
+          <h4 data-es="IA generativa" data-en="Generative AI">IA generativa</h4>
+          <p>Prompt Engineering · RAG · Context Engineering · Tool calling · MCP · Guardrails · Evaluación</p>
+        </div>
+        <div class="skill-group">
+          <h4 data-es="Lenguajes & Web" data-en="Languages & Web">Lenguajes & Web</h4>
+          <p>Python · PHP · JavaScript · HTML5 · CSS3 · MySQL · Java · C / C++ / C# · jQuery · Git · APIs</p>
+        </div>
+        <div class="skill-group">
+          <h4 data-es="Frameworks" data-en="Frameworks">Frameworks</h4>
+          <p>Symfony · WordPress · Bootstrap · PrestaShop · Unity</p>
+        </div>
+        <div class="skill-group">
+          <h4 data-es="IoT & Hardware" data-en="IoT & Hardware">IoT & Hardware</h4>
+          <p>Arduino · ESP32 · Raspberry/Orange Pi · LoRaWAN · RFID · MQTT · I2C/SPI · TCP/IP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section__head reveal">
+      <span class="section__num">02</span>
+      <h2 data-es="Trayectoria" data-en="Career & education">Trayectoria</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-date">2025 — <span data-es="Actual" data-en="Present">Actual</span></div>
+        <div class="tl-body">
+          <h3 data-es="Desarrollador de asistentes virtuales con LLMs" data-en="LLM virtual assistant developer">Desarrollador de asistentes virtuales con LLMs</h3>
+          <span class="tl-org">Cátedra ENIA IA y Agricultura (CIIAA) · Universidad de Córdoba</span>
+          <p data-es="Desarrollo y prototipado de asistentes basados en LLMs para empresas: arquitectura conversacional (intención, contexto, memoria, herramientas), pipelines de conocimiento, integración con sistemas vía APIs y MCP, y evaluación de calidad con control de alucinaciones." data-en="Development and prototyping of LLM-based assistants for companies: conversational architecture (intent, context, memory, tools), knowledge pipelines, integration via APIs and MCP, and quality evaluation with hallucination control.">Desarrollo y prototipado de asistentes basados en LLMs para empresas: arquitectura conversacional (intención, contexto, memoria, herramientas), pipelines de conocimiento, integración con sistemas vía APIs y MCP, y evaluación de calidad con control de alucinaciones.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2024 — 2025</div>
+        <div class="tl-body">
+          <h3 data-es="Ingeniero informático en proyectos I+D, Hardware e IoT" data-en="R&D, Hardware & IoT Engineer">Ingeniero informático en proyectos I+D, Hardware e IoT</h3>
+          <span class="tl-org">Universidad de Córdoba</span>
+          <p data-es="Proyectos SmartOlive (IoT y LoRaWAN para datos agroalimentarios), PTA (geolocalización en interiores y trazabilidad industrial) y ColiBri (drones con navegación y sensores). Microsoldadura SMD/THT, firmware de microcontroladores e integración de software vía APIs." data-en="SmartOlive (IoT & LoRaWAN for agri-food data), PTA (indoor geolocation and industrial traceability) and ColiBri (drones with navigation and sensors). SMD/THT micro-soldering, microcontroller firmware and software integration via APIs.">Proyectos SmartOlive (IoT y LoRaWAN para datos agroalimentarios), PTA (geolocalización en interiores y trazabilidad industrial) y ColiBri (drones con navegación y sensores). Microsoldadura SMD/THT, firmware de microcontroladores e integración de software vía APIs.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2018</div>
+        <div class="tl-body">
+          <h3 data-es="Programador web" data-en="Web programmer">Programador web</h3>
+          <span class="tl-org">TMWEBS · Eurotransportcar</span>
+          <p data-es="Diseño y programación web y gestión de bases de datos con HTML, CSS, PHP, JavaScript, MySQL y PrestaShop. Desarrollo en Symfony." data-en="Web design and programming and database management with HTML, CSS, PHP, JavaScript, MySQL and PrestaShop. Development in Symfony.">Diseño y programación web y gestión de bases de datos con HTML, CSS, PHP, JavaScript, MySQL y PrestaShop. Desarrollo en Symfony.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu reveal">
+      <h3 data-es="Formación" data-en="Education">Formación</h3>
+      <div class="edu__grid">
+        <div class="edu-card">
+          <span class="edu-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 16-4-4 4-4"/><path d="m16 8 4 4-4 4"/><path d="m14.5 4-5 16"/></svg>
+          </span>
+          <div>
+            <strong data-es="Grado en Ingeniería Informática" data-en="BSc in Computer Engineering">Grado en Ingeniería Informática</strong>
+            <span>Escuela Politécnica Superior · UCO · 2020–2024</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <span class="edu-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M2 9h20"/><path d="M6 6.5h.01M9 6.5h.01"/></svg>
+          </span>
+          <div>
+            <strong data-es="Grado Superior en Desarrollo de Aplicaciones Web" data-en="Higher Degree in Web App Development">Grado Superior en Desarrollo de Aplicaciones Web</strong>
+            <span>I.E.S. Trassierra · 2016–2018</span>
+          </div>
+        </div>
+        <div class="edu-card edu-card--fight">
+          <span class="edu-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h2a3 3 0 0 1 3 3v4a4 4 0 0 1-4 4h-4"/><path d="M7 4h7v7H8a3 3 0 0 1-3-3V6a2 2 0 0 1 2-2Z"/><path d="M11 15v3a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3"/></svg>
+          </span>
+          <div>
+            <strong data-es="Técnico Deportivo Nivel 1 · Kickboxing" data-en="Sports Technician Level 1 · Kickboxing">Técnico Deportivo Nivel 1 · Kickboxing</strong>
+            <span>Consejo Superior de Deportes</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <span class="edu-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/><path d="M9 18V5l11-2v11"/></svg>
+          </span>
+          <div>
+            <strong data-es="Grado Profesional de Música" data-en="Professional Degree in Music">Grado Profesional de Música</strong>
+            <span>Conservatorio Ziryab · 2006–2017</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section__head reveal">
+      <span class="section__num">03</span>
+      <h2 data-es="Proyectos" data-en="Projects">Proyectos</h2>
+    </div>
+    <div class="projects">
+      <article class="proj reveal">
+        <div class="proj__tag" data-es="IA / LLMs" data-en="AI / LLMs">IA / LLMs</div>
+        <h3 data-es="Asistentes virtuales con LLMs" data-en="LLM virtual assistants">Asistentes virtuales con LLMs</h3>
+        <p data-es="Asistentes conversacionales para empresas con RAG, tool calling e integración por APIs/MCP. Diseño de testing y guardrails para respuestas trazables." data-en="Conversational assistants for companies with RAG, tool calling and API/MCP integration. Testing and guardrails for traceable answers.">Asistentes conversacionales para empresas con RAG, tool calling e integración por APIs/MCP. Diseño de testing y guardrails para respuestas trazables.</p>
+        <span class="proj__stack">LLMs · RAG · MCP · Python</span>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj__tag" data-es="IoT" data-en="IoT">IoT</div>
+        <h3>SmartOlive</h3>
+        <p data-es="Dispositivo IoT configurable que recolecta datos agroalimentarios en una almazara y los envía por LoRaWAN para visualización en tiempo real." data-en="Configurable IoT device that collects agri-food data in an olive mill and sends it via LoRaWAN for real-time visualization.">Dispositivo IoT configurable que recolecta datos agroalimentarios en una almazara y los envía por LoRaWAN para visualización en tiempo real.</p>
+        <span class="proj__stack">ESP32 · LoRaWAN · Firmware · APIs</span>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj__tag" data-es="IoT" data-en="IoT">IoT</div>
+        <h3>PTA</h3>
+        <p data-es="Solución comercial de geolocalización en interiores para optimizar la trazabilidad y la eficiencia de procesos industriales." data-en="Commercial indoor geolocation solution to optimize traceability and efficiency of industrial processes.">Solución comercial de geolocalización en interiores para optimizar la trazabilidad y la eficiencia de procesos industriales.</p>
+        <span class="proj__stack">Geolocalización · APIs · DLL</span>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj__tag" data-es="Robótica" data-en="Robotics">Robótica</div>
+        <h3>ColiBri</h3>
+        <p data-es="Drones para entornos industriales con navegación avanzada, autovuelo, cámaras, sensores de posicionamiento y RFID para seguimiento." data-en="Drones for industrial environments with advanced navigation, autopilot, cameras, positioning sensors and RFID tracking.">Drones para entornos industriales con navegación avanzada, autovuelo, cámaras, sensores de posicionamiento y RFID para seguimiento.</p>
+        <span class="proj__stack">Drones · RFID · Sensores</span>
+      </article>
+
+      <article class="proj proj--feature reveal">
+        <div class="proj__tag proj__tag--fight" data-es="Proyecto propio" data-en="Own project">Proyecto propio</div>
+        <h3>aprendekickboxing.com</h3>
+        <p data-es="Web propia que creé y mantengo para enseñar kickboxing online: técnica, entrenamiento y contenido para alumnos." data-en="My own website, built and maintained by me, to teach kickboxing online: technique, training and content for students.">Web propia que creé y mantengo para enseñar kickboxing online: técnica, entrenamiento y contenido para alumnos.</p>
+        <a href="https://aprendekickboxing.com" target="_blank" rel="noopener" class="proj__link" data-es="Visitar web →" data-en="Visit site →">Visitar web →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- KICKBOXING -->
+  <section class="section section--fight" id="kickboxing">
+    <div class="section__head reveal">
+      <span class="section__num">04</span>
+      <h2 data-es="Kickboxing" data-en="Kickboxing">Kickboxing</h2>
+    </div>
+    <div class="fight">
+      <div class="fight__photo reveal">
+        <img src="images/action-split.png" alt="Antonio Espejo entrenando kickboxing" onerror="this.classList.add('img-missing')" />
+      </div>
+      <div class="fight__text reveal">
+        <p class="fight__lead" data-es="La otra mitad de quién soy." data-en="The other half of who I am.">La otra mitad de quién soy.</p>
+        <p data-es="Soy técnico deportivo de kickboxing (Nivel 1, Consejo Superior de Deportes). Entreno, compito y enseño. La misma disciplina, constancia y mentalidad de mejora continua que aplico al software la aplico al tatami." data-en="I'm a certified kickboxing coach (Level 1, Spanish Sports Council). I train, compete and teach. The same discipline, consistency and growth mindset I bring to software, I bring to the ring.">Soy técnico deportivo de kickboxing (Nivel 1, Consejo Superior de Deportes). Entreno, compito y enseño. La misma disciplina, constancia y mentalidad de mejora continua que aplico al software la aplico al tatami.</p>
+        <div class="fight__links">
+          <a href="https://aprendekickboxing.com" target="_blank" rel="noopener" class="btn btn--fight">aprendekickboxing.com</a>
+          <a href="https://www.youtube.com/@antonioespejokickboxing" target="_blank" rel="noopener" class="btn btn--ghost-fight" data-es="Canal de YouTube" data-en="YouTube channel">Canal de YouTube</a>
+          <a href="https://www.instagram.com/antonio_espejo_keikami/" target="_blank" rel="noopener" class="btn btn--ghost-fight">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="contact reveal">
+      <h2 data-es="¿Hablamos?" data-en="Let's talk">¿Hablamos?</h2>
+      <p data-es="Disponible para proyectos de software, IA generativa y colaboraciones de kickboxing." data-en="Available for software, generative AI projects and kickboxing collaborations.">Disponible para proyectos de software, IA generativa y colaboraciones de kickboxing.</p>
+      <div class="contact__links">
+        <a href="mailto:antonioespejos98@gmail.com">antonioespejos98@gmail.com</a>
+        <a href="https://www.instagram.com/antonio_espejo_keikami/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <span>© <span id="year"></span> Antonio Espejo</span>
+      <span data-es="Hecho con código y guantes." data-en="Made with code and gloves.">Hecho con código y guantes.</span>
+    </footer>
+  </section>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
